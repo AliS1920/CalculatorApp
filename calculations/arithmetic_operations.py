@@ -1,3 +1,6 @@
+import math
+
+
 def calculate(num1, num2, operation):
     try:
         if operation == 1:
@@ -12,6 +15,8 @@ def calculate(num1, num2, operation):
             return num1 % num2
         elif operation == 6:
             return pow(num1, num2)
+        elif operation == 7:
+            return math.pow(num1, 1/num2)
         else:
             raise ValueError("Invalid operation")
     except ZeroDivisionError:
