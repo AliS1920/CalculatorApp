@@ -1,4 +1,4 @@
-from operations.arithmetic_operations import calculate
+from calculations.arithmetic_operations import calculate
 from print.result_print import text_print
 
 
@@ -12,6 +12,7 @@ def menu():
             print("4. Division (/)")
             print("5. Module (%)")
             print("6. Potenciacion (^)")
+
             print("7. Exit")
             choice = int(input("Enter your choice (1-6): "))
 
