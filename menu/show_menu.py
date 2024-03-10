@@ -11,22 +11,23 @@ def menu():
             print("3. Multiplication (*)")
             print("4. Division (/)")
             print("5. Module (%)")
-            print("6. Exit")
-            choice = int(input("Enter your choice (1-5): "))
+            print("6. Potenciacion (^)")
+            print("7. Exit")
+            choice = int(input("Enter your choice (1-6): "))
 
-            if choice in (1, 2, 3, 4, 5):
+            if choice in (1, 2, 3, 4, 5, 6):
                 num1 = float(input("Enter the first number: "))
                 num2 = float(input("Enter the second number: "))
 
                 result = calculate(num1, num2, choice)
                 text_print(num1, num2, choice, result)
 
-            elif choice == 6:
+            elif choice == 7:
                 print("Exiting the program.")
                 break
 
             else:
-                print("Invalid choice. Please enter a number between 1 and 5.")
+                print("Invalid choice. Please enter a number between 1 and 6.")
         except ValueError:
             print("Error: enter only numbers")
         except Exception as e:
